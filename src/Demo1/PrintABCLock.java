@@ -15,6 +15,7 @@ public class PrintABCLock {
         Task task = new Task(10);
         new Thread(()->{
             task.PrintA();
+            System.out.println();
         }).start();
         new Thread(()->{
             task.PrintB();
